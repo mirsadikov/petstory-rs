@@ -1,0 +1,18 @@
+{
+  "name": "petstory",
+  "version": "1.0.0",
+  "description": "online zoo app",
+  "main": "script.js",
+  "scripts": {
+    "sass:watch": "node-sass sass/main.scss css/style.css -w",
+    "dev-server": "live-server",
+    "dev": "npm-run-all --parallel dev-server sass:watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.1.0",
+    "node-sass": "^7.0.3",
+    "npm-run-all": "^4.1.5"
+  }
+}
