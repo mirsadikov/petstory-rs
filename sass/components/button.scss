@@ -1,0 +1,28 @@
+.button--primary {
+  border: none;
+  background-image: linear-gradient(
+    114deg,
+    $color-primary 0%,
+    $color-primary 33.33%,
+    $color-primary-light 66.66%,
+    $color-primary-light 100%
+  );
+  background-position: center;
+  background-size: 300%;
+  border-radius: 2.5rem;
+  padding: 1.6rem 0;
+  width: 29.8rem;
+  height: 5.4rem;
+  transition: background-position 200ms ease;
+
+  & > a {
+    color: $color-white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+  }
+
+  &:hover {
+    background-position: left;
+  }
+}

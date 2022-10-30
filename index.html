@@ -1,14 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css" />
-  <script defer src="js/script.js"></script>
-  <title>PetStory</title>
-</head>
-<body>
-  hello
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+    <title>PetStory</title>
+  </head>
+  <body>
+    <header class="header home-header">
+      <div class="nav">
+        <div class="container nav__container">
+          <div class="nav__logo-box">
+            <a href="index.html" class="nav__logo-link">
+              <img src="./img/logo.png" alt="logo" class="nav__logo" />
+            </a>
+          </div>
+          <ul class="nav__links">
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Map</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Zoos</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Donate</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contact us</a>
+            </li>
+          </ul>
+          <p class="nav__designer">Designed by &copy;</p>
+        </div>
+      </div>
+      <div class="hero">
+        <div class="hero__container container">
+          <div class="hero__text">
+            <h1 class="hero__title">
+              Watch your <span>favorite</span> animal online
+            </h1>
+            <button class="hero__button button--primary">
+              <a href="#" class="hero__button-link">Watch online</a>
+            </button>
+            <div class="hero__shape"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>

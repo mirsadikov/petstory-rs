@@ -1,0 +1,113 @@
+.nav {
+  background-color: #000;
+  color: #fff;
+  font-size: 1.6rem; }
+  .nav__container {
+    padding: 1.4rem 0;
+    display: flex;
+    align-items: center;
+    gap: 5px; }
+  .nav__logo {
+    height: 5.2rem;
+    width: 8.2rem;
+    display: block; }
+  .nav__links {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    flex: 1;
+    list-style: none; }
+  .nav__item {
+    padding-left: 5.8rem; }
+  .nav__link {
+    color: #fff;
+    text-decoration: none; }
+  .nav__link:hover, .nav__link:active {
+    color: #f9804b; }
+
+.button--primary {
+  border: none;
+  background-image: linear-gradient(114deg, #f9804b 0%, #f9804b 33.33%, #fe9013 66.66%, #fe9013 100%);
+  background-position: center;
+  background-size: 300%;
+  border-radius: 2.5rem;
+  padding: 1.6rem 0;
+  width: 29.8rem;
+  height: 5.4rem;
+  transition: background-position 200ms ease; }
+  .button--primary > a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem; }
+  .button--primary:hover {
+    background-position: left; }
+
+.container {
+  max-width: 116rem;
+  margin: 0 auto; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /* 16px to 10px */
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth; }
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.home-header {
+  height: 78rem;
+  background-image: url(/img/hero.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column; }
+
+.home-header .hero {
+  text-align: center;
+  flex: 1; }
+  .home-header .hero__container {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 16px; }
+  .home-header .hero__text {
+    width: 50rem;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative; }
+  .home-header .hero__title {
+    letter-spacing: 2px;
+    font-size: 10.4rem;
+    line-height: 77%;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 6rem;
+    z-index: 1; }
+    .home-header .hero__title span {
+      color: #ffee2e; }
+  .home-header .hero__shape {
+    height: 46.5rem;
+    width: 46.5rem;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #f9804b;
+    background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+    top: 1.7%;
+    left: -14.6%; }
