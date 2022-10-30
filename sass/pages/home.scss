@@ -58,3 +58,37 @@
     left: -14.6%;
   }
 }
+
+.home-main .about {
+  position: relative;
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    gap: 8.7rem;
+    padding: 14rem 0;
+  }
+
+  &__img {
+    width: 55%;
+  }
+
+  &__texts {
+    color: $color-text;
+  }
+
+  &__text:first-of-type {
+    margin: 2rem 0;
+    line-height: 130%;
+  }
+
+  &__sub-title {
+    margin: 5.4rem 0 3.4rem;
+  }
+
+  &__background {
+    position: absolute;
+    right: 0;
+    top: 1.2rem;
+  }
+}

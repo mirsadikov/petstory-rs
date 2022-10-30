@@ -67,6 +67,20 @@ body {
 body {
   font-family: 'Roboto', sans-serif; }
 
+.heading-primary {
+  font-size: 4.8rem;
+  line-height: 120%;
+  font-weight: 400; }
+
+.heading-sub {
+  font-size: 2.4rem;
+  line-height: 120%;
+  font-weight: 400; }
+
+.text-body {
+  font-size: 1.6rem;
+  line-height: 140%; }
+
 .home-header {
   height: 78rem;
   background-image: url(/img/hero.png);
@@ -111,3 +125,24 @@ body {
     background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
     top: 1.7%;
     left: -14.6%; }
+
+.home-main .about {
+  position: relative; }
+  .home-main .about__container {
+    display: flex;
+    align-items: flex-start;
+    gap: 8.7rem;
+    padding: 14rem 0; }
+  .home-main .about__img {
+    width: 55%; }
+  .home-main .about__texts {
+    color: #333b41; }
+  .home-main .about__text:first-of-type {
+    margin: 2rem 0;
+    line-height: 130%; }
+  .home-main .about__sub-title {
+    margin: 5.4rem 0 3.4rem; }
+  .home-main .about__background {
+    position: absolute;
+    right: 0;
+    top: 1.2rem; }
