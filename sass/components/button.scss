@@ -14,15 +14,18 @@
   width: 29.8rem;
   height: 5.4rem;
   transition: background-position 200ms ease;
+  cursor: pointer;
 
   & > a {
     color: $color-white;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.6rem;
   }
 
   &:hover {
     background-position: left;
+  }
+
+  &:active {
+    background: $color-green;
   }
 }

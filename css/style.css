@@ -34,14 +34,15 @@
   padding: 1.6rem 0;
   width: 29.8rem;
   height: 5.4rem;
-  transition: background-position 200ms ease; }
+  transition: background-position 200ms ease;
+  cursor: pointer; }
   .button--primary > a {
     color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.6rem; }
+    text-decoration: none; }
   .button--primary:hover {
     background-position: left; }
+  .button--primary:active {
+    background: #4b9200; }
 
 .container {
   max-width: 116rem;
@@ -80,6 +81,17 @@ body {
 .text-body {
   font-size: 1.6rem;
   line-height: 140%; }
+
+.text-btn {
+  text-transform: uppercase;
+  line-height: 140%;
+  font-size: 1.6rem;
+  font-weight: 500; }
+
+.text-small {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 110%; }
 
 .home-header {
   height: 78rem;
@@ -146,3 +158,59 @@ body {
     position: absolute;
     right: 0;
     top: 1.2rem; }
+
+.home-main .gallery {
+  padding: 3.7rem 0 10rem;
+  position: relative; }
+  .home-main .gallery__background-left {
+    position: absolute;
+    left: 0;
+    bottom: 0; }
+  .home-main .gallery__background-right {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+  .home-main .gallery__cards {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem 3rem; }
+  .home-main .gallery__card {
+    position: relative;
+    border: 1px solid #f9804b;
+    border-radius: 5px;
+    overflow: hidden; }
+    .home-main .gallery__card-img {
+      width: 100%;
+      display: block; }
+    .home-main .gallery__card-food {
+      position: absolute;
+      bottom: 13px;
+      right: 13px; }
+    .home-main .gallery__card-cap {
+      margin: 0.8rem 4.7rem 1.4rem 1.6rem; }
+  .home-main .gallery__slider-btn {
+    position: absolute;
+    height: 6.2rem;
+    width: 6.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    border-radius: 50%;
+    top: 50%;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(114deg, #f9804b 0%, #fe9013 100%); }
+    .home-main .gallery__slider-btn:active {
+      background: #4b9200; }
+    .home-main .gallery__slider-btn--left {
+      left: 0;
+      transform: translate(calc(-100% - 2rem), calc(-50% - 3px)); }
+    .home-main .gallery__slider-btn--right {
+      right: 0;
+      transform: translate(calc(100% + 2rem), calc(-50% - 3px)); }
+  .home-main .gallery__button {
+    margin: 7.7rem auto 0;
+    text-align: center;
+    display: block; }
