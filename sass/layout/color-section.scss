@@ -1,0 +1,38 @@
+.color-section {
+  background: linear-gradient(
+      315.75deg,
+      #fed290b3 30.06%,
+      #febdab 100.95%,
+      #fed290b3 106.36%
+    ),
+    linear-gradient(
+      315.75deg,
+      #febdabbd 30.06%,
+      #f3a9f8a8 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      #febdabbd 30.06%,
+      #f3a9f8a8 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+  // opacity: 0.9;
+  padding: 6.9rem 0 10rem;
+
+  &__container {
+    border-radius: 2rem;
+    background: #fdfdff85;
+    backdrop-filter: blur(2px);
+    color: $color-text;
+  }
+
+  &__title {
+    color: $color-primary-light;
+    text-align: center;
+  }
+}
