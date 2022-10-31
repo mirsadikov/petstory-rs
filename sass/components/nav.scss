@@ -26,11 +26,16 @@
 
   &__item {
     padding-left: 5.8rem;
+
+    &--active .nav__link {
+      color: $color-primary;
+    }
   }
 
   &__link {
     color: $color-white;
     text-decoration: none;
+    transition: color 200ms ease;
   }
 
   &__link:hover,
