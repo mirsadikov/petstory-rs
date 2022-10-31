@@ -1,6 +1,7 @@
 .home-header {
   height: 78rem;
   background-image: url(/img/hero.png);
+  background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -239,6 +240,10 @@
     &-title {
       margin-top: 3rem;
     }
+  }
+
+  &__process-arrow {
+    transform: translateY(-42px);
   }
 
   &__button-link {
