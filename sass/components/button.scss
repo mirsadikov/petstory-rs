@@ -1,4 +1,4 @@
-.button--primary {
+.button-primary {
   border: none;
   background-image: linear-gradient(
     114deg,
@@ -25,5 +25,9 @@
 
   &:active {
     background: $color-green;
+  }
+
+  &--square {
+    border-radius: 5px;
   }
 }

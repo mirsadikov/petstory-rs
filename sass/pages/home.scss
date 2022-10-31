@@ -246,3 +246,143 @@
     display: block;
   }
 }
+
+.home-main .testimonials {
+  position: relative;
+  overflow: hidden;
+
+  &__background {
+    position: absolute;
+    right: -110px;
+    bottom: -77px;
+    transform: rotate(30deg);
+  }
+
+  &__container {
+    padding: 14rem 0 18rem;
+  }
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 4.7rem;
+  }
+
+  &__cards {
+    display: flex;
+    overflow: hidden;
+    gap: 3rem;
+    align-items: stretch;
+  }
+
+  &__card {
+    max-height: 39.1rem;
+    flex-shrink: 0;
+    width: calc((100% - 9rem) / 4);
+    border-radius: 2rem;
+    padding: 2px;
+    position: relative;
+    background-image: linear-gradient(
+        315.75deg,
+        #febdabbd 30.06%,
+        #f3a9f8a8 50.74%,
+        #e0d8f0 80.49%,
+        #eaf7fe 127.9%,
+        #eaf7fe 149.54%
+      ),
+      linear-gradient(
+        315.75deg,
+        #febdabbd 30.06%,
+        #f3a9f8a8 50.74%,
+        #e0d8f0 80.49%,
+        #eaf7fe 127.9%,
+        #eaf7fe 149.54%
+      );
+
+    &-bg {
+      height: 100%;
+      padding: 1.5rem 1.5rem 1.9rem 1.6rem;
+      border-radius: 1.9rem;
+      background-color: $color-grey;
+    }
+  }
+
+  &__card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__card-img {
+    width: 3.7rem;
+    height: 3.7rem;
+    border-radius: 50%;
+  }
+
+  &__card-name {
+    font-size: 1.6rem;
+    line-height: 120%;
+    margin-bottom: 1px;
+  }
+
+  &__card-stat {
+    color: #bdbdbd;
+
+    span {
+      margin: 0 0.7rem;
+    }
+  }
+
+  &__card-desc {
+    color: #767474;
+    max-height: 30.9rem;
+    overflow-x: auto;
+    line-height: 120%;
+  }
+
+  &__slider {
+    -webkit-appearance: none;
+    appearance: none;
+    max-width: 60rem;
+    width: 100%;
+    margin: 2.1rem auto;
+    display: block;
+    height: 8px;
+    background: #f5f7f6;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    border-radius: 5px;
+    border: 0.5px solid $color-primary-light;
+  }
+
+  &__slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 11.5rem;
+    height: 8px;
+    background: $color-primary-light;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  &__slider::-moz-range-thumb {
+    height: 11.5rem;
+    border-radius: 5px;
+    height: 8px;
+    background: $color-primary-light;
+    cursor: pointer;
+  }
+
+  &__slider::-ms-thumb {
+    height: 11.5rem;
+    border-radius: 5px;
+    height: 8px;
+    background: $color-primary-light;
+    cursor: pointer;
+  }
+
+  &__button-link {
+    margin-top: 3.1rem;
+    display: block;
+  }
+}
