@@ -121,6 +121,8 @@
     border: 1px solid $color-primary;
     border-radius: 5px;
     overflow: hidden;
+    text-decoration: none;
+    color: $color-black-dark;
 
     &-img {
       width: 100%;
@@ -171,7 +173,7 @@
     }
   }
 
-  &__button {
+  &__button-link {
     margin: 7.7rem auto 0;
     text-align: center;
     display: block;

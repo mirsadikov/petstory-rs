@@ -15,11 +15,8 @@
   height: 5.4rem;
   transition: background-position 200ms ease;
   cursor: pointer;
-
-  & > a {
-    color: $color-white;
-    text-decoration: none;
-  }
+  text-decoration: none;
+  color: $color-white;
 
   &:hover {
     background-position: left;

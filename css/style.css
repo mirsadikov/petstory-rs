@@ -35,10 +35,9 @@
   width: 29.8rem;
   height: 5.4rem;
   transition: background-position 200ms ease;
-  cursor: pointer; }
-  .button--primary > a {
-    color: #fff;
-    text-decoration: none; }
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff; }
   .button--primary:hover {
     background-position: left; }
   .button--primary:active {
@@ -179,7 +178,9 @@ body {
     position: relative;
     border: 1px solid #f9804b;
     border-radius: 5px;
-    overflow: hidden; }
+    overflow: hidden;
+    text-decoration: none;
+    color: #000; }
     .home-main .gallery__card-img {
       width: 100%;
       display: block; }
@@ -210,7 +211,7 @@ body {
     .home-main .gallery__slider-btn--right {
       right: 0;
       transform: translate(calc(100% + 2rem), calc(-50% - 3px)); }
-  .home-main .gallery__button {
+  .home-main .gallery__button-link {
     margin: 7.7rem auto 0;
     text-align: center;
     display: block; }
