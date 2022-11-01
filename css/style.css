@@ -100,7 +100,8 @@
     padding: 1rem;
     border: 0.7px solid #f9804b;
     color: #fff;
-    outline: none; }
+    outline: none;
+    border-radius: 2px; }
     .footer__form-input::placeholder {
       color: #bdbdbd; }
   .footer__button-link {
