@@ -38,8 +38,11 @@
     transition: color 200ms ease;
   }
 
-  &__link:hover,
-  &__link:active {
+  &__link:hover {
     color: $color-primary;
+  }
+
+  &__link:active {
+    color: $color-green;
   }
 }

@@ -56,6 +56,16 @@
     &:not(:last-child) {
       margin-bottom: 1rem;
     }
+
+    &:hover {
+      .footer__social-icon {
+        background-color: $color-green;
+      }
+
+      p {
+        color: $color-green;
+      }
+    }
   }
 
   &__social-link {
@@ -98,6 +108,10 @@
     &:hover {
       color: $color-primary;
     }
+
+    &:active {
+      color: $color-green;
+    }
   }
 
   &__item--active &__link {
@@ -111,9 +125,22 @@
     font-size: 1.6rem;
     line-height: 130%;
     color: #ffffff;
+    text-decoration: none;
+
+    p {
+      border-bottom: 1px solid transparent;
+    }
 
     p:first-child {
       margin-bottom: 1rem;
+    }
+
+    &:hover {
+      color: $color-green;
+
+      p {
+        border-bottom: 1px solid currentColor;
+      }
     }
   }
 }
