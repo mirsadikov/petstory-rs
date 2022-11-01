@@ -365,15 +365,22 @@ body {
     top: 50%;
     border: none;
     cursor: pointer;
+    transition: transform 0.2s ease-in-out;
     background: linear-gradient(114deg, #f9804b 0%, #fe9013 100%); }
     .home-main .pets__slider-btn:active {
       background: #4b9200; }
+    .home-main .pets__slider-btn:hover {
+      background: #f9804b; }
     .home-main .pets__slider-btn--left {
       left: 0;
       transform: translate(calc(-100% - 2rem), calc(-50% - 3px)); }
+      .home-main .pets__slider-btn--left:hover {
+        transform: translate(calc(-100% - 2rem), calc(-50% - 3px)) scale(1.1); }
     .home-main .pets__slider-btn--right {
       right: 0;
       transform: translate(calc(100% + 2rem), calc(-50% - 3px)); }
+      .home-main .pets__slider-btn--right:hover {
+        transform: translate(calc(100% + 2rem), calc(-50% - 3px)) scale(1.1); }
   .home-main .pets__button-link {
     margin: 7.7rem auto 0;
     display: block; }
@@ -484,19 +491,24 @@ body {
     max-height: 30.9rem;
     overflow-x: auto;
     line-height: 120%; }
-  .home-main .testimonials__slider {
-    -webkit-appearance: none;
-    appearance: none;
+  .home-main .testimonials__scroller {
     max-width: 60rem;
     width: 100%;
     margin: 2.1rem auto;
+    padding: 1px;
+    border-radius: 5px;
+    border: 0.5px;
+    background-image: linear-gradient(315.75deg, #febdabbd 30.06%, #f3a9f8a8 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%), linear-gradient(315.75deg, #febdabbd 30.06%, #f3a9f8a8 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%); }
+  .home-main .testimonials__slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
     display: block;
     height: 8px;
     background: #f5f7f6;
     -webkit-transition: 0.2s;
     transition: opacity 0.2s;
-    border-radius: 5px;
-    border: 0.5px solid #fe9013; }
+    border-radius: 5px; }
   .home-main .testimonials__slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
