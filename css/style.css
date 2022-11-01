@@ -59,16 +59,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid #333b41;
   border-radius: 5px; }
-  .form-btn:active {
+  input:not(:placeholder-shown):valid + .form-btn:active {
     border: 1px solid #4b9200;
     color: #4b9200; }
-  input:valid + .form-btn {
-    border: 1px solid #333b41;
-    background-color: #f1f2f3; }
-  input:not(:valid) + .form-btn {
+  input:not(:placeholder-shown):not(valid) + .form-btn {
     border: 1px solid #d31414;
     color: #d31414; }
+  input:not(:placeholder-shown):valid + .form-btn {
+    border: 1px solid #333b41;
+    color: #000; }
 
 .footer {
   background-color: #111115;

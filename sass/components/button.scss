@@ -40,21 +40,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  border: 1px solid $color-text;
   border-radius: 5px;
 
-  &:active {
+  input:not(:placeholder-shown):valid + &:active {
     border: 1px solid $color-green;
     color: $color-green;
   }
 
-  input:valid + & {
-    border: 1px solid $color-text;
-    background-color: $color-grey;
-  }
-
-  input:not(:valid) + & {
+  input:not(:placeholder-shown):not(valid) + & {
     border: 1px solid $color-red;
     color: $color-red;
+  }
+
+  input:not(:placeholder-shown):valid + & {
+    border: 1px solid $color-text;
+    color: $color-black-dark;
   }
 }
