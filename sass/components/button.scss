@@ -31,3 +31,30 @@
     border-radius: 5px;
   }
 }
+
+.form-btn {
+  font-size: 1.6rem;
+  line-height: 140%;
+  width: 12.9rem;
+  height: 4.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+
+  &:active {
+    border: 1px solid $color-green;
+    color: $color-green;
+  }
+
+  input:valid + & {
+    border: 1px solid $color-text;
+    background-color: $color-grey;
+  }
+
+  input:not(:valid) + & {
+    border: 1px solid $color-red;
+    color: $color-red;
+  }
+}

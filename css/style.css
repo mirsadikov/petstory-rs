@@ -49,6 +49,106 @@
   .button-primary--square {
     border-radius: 5px; }
 
+.form-btn {
+  font-size: 1.6rem;
+  line-height: 140%;
+  width: 12.9rem;
+  height: 4.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px; }
+  .form-btn:active {
+    border: 1px solid #4b9200;
+    color: #4b9200; }
+  input:valid + .form-btn {
+    border: 1px solid #333b41;
+    background-color: #f1f2f3; }
+  input:not(:valid) + .form-btn {
+    border: 1px solid #d31414;
+    color: #d31414; }
+
+.footer {
+  background-color: #111115;
+  color: #fff; }
+  .footer__container {
+    padding: 4rem 0 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3.5rem; }
+  .footer__logo {
+    width: 8.2rem; }
+  .footer__form-title {
+    font-size: 2.4rem;
+    line-height: 120%;
+    width: 100%; }
+  .footer__form {
+    max-width: 36.6rem;
+    grid-column: 2 / -1;
+    justify-self: right;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem 1rem; }
+  .footer__form-input {
+    flex: 1;
+    background-color: transparent;
+    font-size: 1.6rem;
+    line-height: 140%;
+    padding: 1rem;
+    border: 0.7px solid #f9804b;
+    color: #fff;
+    outline: none; }
+    .footer__form-input::placeholder {
+      color: #bdbdbd; }
+  .footer__button-link {
+    grid-column: 1 / -1; }
+  .footer__socials {
+    list-style: none;
+    margin-top: 0.7rem; }
+  .footer__social:not(:last-child) {
+    margin-bottom: 1rem; }
+  .footer__social-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none; }
+    .footer__social-link p {
+      font-size: 1.6rem;
+      line-height: 140%;
+      color: #fff; }
+  .footer__social-icon {
+    height: 2.6rem;
+    width: 2.6rem;
+    background-color: #c4c4c480;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.2rem; }
+  .footer__links {
+    list-style: none;
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between; }
+  .footer__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 140%;
+    transition: color 200ms ease; }
+    .footer__link:hover {
+      color: #f9804b; }
+  .footer__item--active .footer__link {
+    color: #f9804b; }
+  .footer__authors {
+    align-self: flex-end;
+    justify-self: end;
+    font-weight: 100;
+    font-size: 1.6rem;
+    line-height: 130%;
+    color: #ffffff; }
+    .footer__authors p:first-child {
+      margin-bottom: 1rem; }
+
 .container {
   max-width: 116rem;
   margin: 0 auto; }
