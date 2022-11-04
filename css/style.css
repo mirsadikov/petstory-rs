@@ -563,7 +563,8 @@ body {
   .donate-form__title {
     margin-right: 1.2rem; }
   .donate-form__heading-sub {
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    align-self: flex-start; }
 
 .donate-info {
   justify-content: center;
