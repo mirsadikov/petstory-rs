@@ -646,14 +646,15 @@ body {
     .donate-range__inputs input[type='radio']:checked::before {
       border-color: #fe9013; }
     .donate-range__inputs input[type='radio']:checked::after {
-      color: #fe9013; }
+      filter: brightness(0) saturate(100%) invert(73%) sepia(71%) saturate(3923%) hue-rotate(349deg) brightness(102%) contrast(102%); }
     .donate-range__inputs input[type='radio']::after {
-      content: attr(value);
+      content: url(/img/dollar.svg) attr(value);
+      filter: brightness(0) saturate(100%) invert(21%) sepia(18%) saturate(380%) hue-rotate(163deg) brightness(95%) contrast(93%);
       color: #333b41;
+      width: max-content;
       font-weight: 500;
       font-size: 2.6rem;
       line-height: 140%;
-      text-transform: uppercase;
       position: absolute;
       top: calc(100% + 1.7rem); }
 
