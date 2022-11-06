@@ -89,34 +89,49 @@
     display: flex;
     align-items: center;
     margin-top: 1.6rem;
+    position: relative;
+
+    &-bar {
+      width: calc(100% - 6rem);
+      text-align: center;
+      position: absolute;
+      display: flex;
+      height: 2px;
+      background-color: #72828e;
+    }
 
     &-container {
       flex: 1;
       justify-content: space-between;
       display: flex;
       height: 2px;
-      background-color: #72828e;
       align-items: center;
+      margin: 0 -1rem;
     }
 
     input[type='radio'] {
       cursor: pointer;
       appearance: none;
-      background-color: #ffee2e;
-      width: 10px;
-      height: 10px;
+      background-image: radial-gradient(
+        circle at 50%,
+        yellow 0px,
+        yellow 4.5px,
+        transparent 5.5px,
+        transparent 100%
+      );
+      width: 23px;
+      height: 23px;
       border-radius: 50%;
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
-      outline: 2px solid transparent;
-      outline-offset: 5px;
       transition: outline 100ms ease-in-out;
+      border: 2px solid transparent;
     }
 
     input[type='radio']:checked {
-      outline: 2px solid $color-primary-light;
+      border: 2px solid $color-primary-light;
     }
 
     input[type='radio']::before {
@@ -147,7 +162,7 @@
       line-height: 140%;
       text-transform: uppercase;
       position: absolute;
-      top: calc(100% + 2rem);
+      top: calc(100% + 1.7rem);
     }
   }
 }
