@@ -2,9 +2,10 @@
   background-color: $color-black-dark;
   color: $color-white;
   font-size: 1.6rem;
+  padding: 1.4rem 0;
+  z-index: 1;
 
   &__container {
-    padding: 1.4rem 0;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -22,10 +23,18 @@
     align-self: stretch;
     flex: 1;
     list-style: none;
+
+    @media screen and (max-width: 90em) {
+      padding-left: 1.2rem;
+    }
   }
 
   &__item {
     padding-left: 5.8rem;
+
+    @media screen and (max-width: 90em) {
+      padding-left: 4.8rem;
+    }
 
     &--active .nav__link {
       color: $color-primary;

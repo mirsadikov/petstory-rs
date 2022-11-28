@@ -1,4 +1,9 @@
 .container {
-  max-width: $grid-width;
+  max-width: var(--grid-width);
   margin: 0 auto;
+  padding: 0 var(--grid-padding);
+
+  @media screen and (max-width: 85.375em) {
+    padding: 0 var(--grid-padding);
+  }
 }

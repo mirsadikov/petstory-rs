@@ -12,4 +12,14 @@ $color-green: #4b9200;
 $color-white: #fff;
 
 // GRID
-$grid-width: 116rem;
+:root {
+  --grid-width: 120rem;
+  --grid-padding: 2rem;
+}
+
+@media screen and (max-width: 90em) {
+  :root {
+    --grid-width: 114rem;
+    --grid-padding: 3rem;
+  }
+}

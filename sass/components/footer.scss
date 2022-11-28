@@ -1,12 +1,16 @@
 .footer {
   background-color: #111115;
   color: $color-white;
+  padding: 4rem 0 5rem;
 
   &__container {
-    padding: 4rem 0 5rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3.5rem;
+
+    @media screen and (max-width: 90em) {
+      grid-template-columns: 5fr 7fr 5fr;
+    }
   }
 
   &__logo {
@@ -26,6 +30,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1.4rem 1rem;
+
+    @media screen and (max-width: 85.375em) {
+      margin-right: 3.3rem;
+    }
   }
 
   &__form-input {
@@ -97,6 +105,11 @@
     align-self: flex-end;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 90em) {
+      justify-content: flex-start;
+      gap: 4.8rem;
+    }
   }
 
   &__link {

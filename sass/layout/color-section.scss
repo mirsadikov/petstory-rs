@@ -24,7 +24,12 @@
   // opacity: 0.9;
   padding: 6.9rem 0 10rem;
 
+  @media screen and (max-width: 85.375em) {
+    padding: var(--grid-padding) var(--grid-padding) 5rem;
+  }
+
   &__container {
+    max-width: calc(var(--grid-width) - 2 * var(--grid-padding));
     border-radius: 2rem;
     background: #fdfdff85;
     backdrop-filter: blur(2px);
