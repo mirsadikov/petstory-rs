@@ -23,3 +23,15 @@ $color-white: #fff;
     --grid-padding: 3rem;
   }
 }
+
+@media screen and (max-width: 640px) {
+  :root {
+    --grid-padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --grid-padding: 1rem;
+  }
+}

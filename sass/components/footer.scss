@@ -3,6 +3,10 @@
   color: $color-white;
   padding: 4rem 0 5rem;
 
+  @media screen and (max-width: 640px) {
+    padding: 1.2rem 0;
+  }
+
   &__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -11,9 +15,17 @@
     @media screen and (max-width: 90em) {
       grid-template-columns: 5fr 7fr 5fr;
     }
+
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 1fr auto 38%;
+      gap: 0.5rem;
+    }
   }
 
   &__logo {
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    padding: 0.7rem 0.6rem;
     width: 8.2rem;
   }
 
@@ -33,6 +45,10 @@
 
     @media screen and (max-width: 85.375em) {
       margin-right: 3.3rem;
+    }
+
+    @media screen and (max-width: 800px) {
+      display: none;
     }
   }
 
@@ -54,11 +70,24 @@
 
   &__button-link {
     grid-column: 1 / -1;
+
+    @media screen and (max-width: 800px) {
+      grid-row: 2 / 3;
+      grid-column: 1 / span 2;
+      margin-bottom: 6rem;
+      margin-top: 2.5rem;
+    }
   }
 
   &__socials {
     list-style: none;
     margin-top: 0.7rem;
+    @media screen and (max-width: 800px) {
+      grid-column: -2 / -1;
+      grid-row: 1 / span 2;
+      justify-self: end;
+      margin-top: 0;
+    }
   }
 
   &__social {
@@ -75,6 +104,12 @@
         color: $color-green;
       }
     }
+
+    @media screen and (max-width: 800px) {
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
   }
 
   &__social-link {
@@ -86,6 +121,10 @@
       font-size: 1.6rem;
       line-height: 140%;
       color: $color-white;
+
+      @media screen and (max-width: 900px) {
+        display: none;
+      }
     }
   }
 
@@ -98,6 +137,10 @@
     align-items: center;
     justify-content: center;
     margin-right: 1.2rem;
+
+    @media screen and (max-width: 800px) {
+      margin-right: 0rem;
+    }
   }
 
   &__links {
@@ -109,6 +152,11 @@
     @media screen and (max-width: 90em) {
       justify-content: flex-start;
       gap: 4.8rem;
+    }
+
+    @media screen and (max-width: 800px) {
+      grid-column: 1 / span 2;
+      gap: 3.7rem;
     }
   }
 

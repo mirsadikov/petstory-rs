@@ -28,6 +28,10 @@
     padding: var(--grid-padding) var(--grid-padding) 5rem;
   }
 
+  @media screen and (max-width: 640px) {
+    padding: 2rem 0;
+  }
+
   &__container {
     max-width: calc(var(--grid-width) - 2 * var(--grid-padding));
     border-radius: 2rem;

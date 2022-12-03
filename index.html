@@ -31,25 +31,41 @@
               <img src="./img/logo.png" alt="logo" class="nav__logo" />
             </a>
           </div>
-          <ul class="nav__links">
-            <li class="nav__item nav__item--active">
-              <a href="/index.html" class="nav__link">About</a>
-            </li>
-            <li class="nav__item"><a href="#" class="nav__link">Map</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Zoos</a></li>
-            <li class="nav__item">
-              <a href="/donate.html" class="nav__link">Donate</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Contact us</a>
-            </li>
-          </ul>
-          <a
-            href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
-            target="_blank"
-            class="nav__link"
-            >Designed by &copy;</a
-          >
+          <input
+            type="checkbox"
+            name="nav_burger"
+            id="burger"
+            class="nav__menu-state"
+          />
+          <div class="nav__menu">
+            <a href="index.html" class="nav__logo-link">
+              <img src="./img/logo_orange.png" alt="logo" class="nav__logo-menu" />
+            </a>
+            <ul class="nav__links">
+              <li class="nav__item nav__item--active">
+                <a href="/index.html" class="nav__link">About</a>
+              </li>
+              <li class="nav__item"><a href="#" class="nav__link">Map</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Zoos</a></li>
+              <li class="nav__item">
+                <a href="/donate.html" class="nav__link">Donate</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Contact us</a>
+              </li>
+            </ul>
+            <a
+              href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
+              target="_blank"
+              class="nav__link"
+              >Designed by &copy;</a
+            >
+          </div>
+          <label for="burger" class="nav__burger">
+            <div class="nav__burger-line"></div>
+            <div class="nav__burger-line"></div>
+            <div class="nav__burger-line"></div>
+          </label>
         </div>
       </div>
 
@@ -58,12 +74,12 @@
         <div class="hero__container container">
           <div class="hero__text">
             <h1 class="hero__title">
+              <div class="hero__shape"></div>
               Watch your <span>favorite</span> animal online
             </h1>
             <a href="#" class="hero__button-link text-btn button-primary">
               Watch online
             </a>
-            <div class="hero__shape"></div>
           </div>
         </div>
       </div>
@@ -175,6 +191,31 @@
               <div class="pets__card-cap">
                 <h4 class="pets__card-title text-btn">Cheetahs</h4>
                 <p class="pets__card-desc text-small">Native to Africa</p>
+              </div>
+              <img
+                src="/img/meet-fish_icon.svg"
+                alt="banana-bamboo"
+                class="pets__card-food"
+              />
+            </a>
+
+            <a href="#" class="pets__card">
+              <img src="/img/penguin.png" alt="Pandas" class="pets__card-img" />
+              <div class="pets__card-cap">
+                <h4 class="pets__card-title text-btn">Penguins</h4>
+                <p class="pets__card-desc text-small">Native to Antarctica</p>
+              </div>
+              <img
+                src="/img/meet-fish_icon.svg"
+                alt="banana-bamboo"
+                class="pets__card-food"
+              />
+            </a>
+            <a href="#" class="pets__card">
+              <img src="/img/penguin.png" alt="Pandas" class="pets__card-img" />
+              <div class="pets__card-cap">
+                <h4 class="pets__card-title text-btn">Penguins</h4>
+                <p class="pets__card-desc text-small">Native to Antarctica</p>
               </div>
               <img
                 src="/img/meet-fish_icon.svg"
