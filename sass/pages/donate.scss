@@ -12,7 +12,11 @@
   }
 
   @media screen and (max-width: 800px) {
-    height: 36.9rem;
+    height: 57.6vw;
+  }
+
+  @media screen and (max-width: 500px) {
+    height: 69.2vw;
   }
 }
 
@@ -30,6 +34,16 @@
     background-position: -27.3rem 3.4rem;
     background-size: 214.8%;
   }
+
+  @media screen and (max-width: 600px) {
+    background-position: -27.3rem 3.4rem;
+    background-size: 214.8%;
+  }
+
+  @media screen and (max-width: 500px) {
+    background-position: 33.3% bottom;
+    background-size: 240%;
+  }
 }
 
 .donate {
@@ -41,6 +55,11 @@
 
   @media screen and (max-width: 800px) {
     padding-top: 2.8rem;
+    padding-bottom: 4.7rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding-bottom: 2rem;
   }
 
   &__title {
@@ -70,6 +89,10 @@
     @media screen and (max-width: 640px) {
       margin-top: 1.6rem;
     }
+
+    @media screen and (max-width: 500px) {
+      line-height: 137%;
+    }
   }
 
   &__sub-title {
@@ -83,6 +106,11 @@
     @media screen and (max-width: 640px) {
       margin: 3rem 0;
     }
+
+    @media screen and (max-width: 500px) {
+      font-size: 2.4rem;
+      margin-bottom: 2.8rem;
+    }
   }
 }
 
@@ -93,12 +121,25 @@
     padding: 2rem 2rem 4.5rem;
   }
 
+  @media screen and (max-width: 640px) {
+    padding: 2rem 0 3rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 2rem 0;
+  }
+
   &__title {
     margin-right: 1.2rem;
 
     @media screen and (max-width: 640px) {
       margin-right: 0;
       margin-top: 1rem;
+    }
+
+    @media screen and (max-width: 500px) {
+      font-size: 2.4rem;
+      margin-top: 0rem;
     }
   }
 
@@ -113,6 +154,11 @@
     @media screen and (max-width: 640px) {
       margin-top: 2rem;
       text-align: center;
+    }
+
+    @media screen and (max-width: 500px) {
+      font-size: 1.6rem;
+      margin-top: 1.3rem;
     }
   }
 }
@@ -129,18 +175,39 @@
     margin-top: 5rem;
   }
 
+  @media screen and (max-width: 500px) {
+    gap: 5rem;
+    margin-top: 1.4rem;
+    padding-right: 0;
+  }
+
+  &__img {
+    @media screen and (max-width: 800px) {
+      width: 53.3%;
+    }
+  }
+
   &__text {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 5.5rem;
     position: relative;
+
+    @media screen and (max-width: 500px) {
+      padding-top: 3.5rem;
+    }
+
     &::after {
       content: url(/img/x_icon.svg);
       position: absolute;
       right: -16%;
       top: 50%;
       transform: translateY(40%);
+
+      @media screen and (max-width: 500px) {
+        content: url('/img/x_icon_small.svg');
+      }
     }
 
     h3 {
@@ -149,6 +216,17 @@
       font-size: 7.2rem;
       line-height: 80%;
       margin-bottom: 1.1rem;
+
+      @media screen and (max-width: 639px) {
+        font-size: 4rem;
+        margin-bottom: 0.8rem;
+      }
+    }
+
+    p {
+      @media screen and (max-width: 639px) {
+        font-size: 0.9rem;
+      }
     }
   }
 }
@@ -164,7 +242,22 @@
 
   @media screen and (max-width: 640px) {
     width: 100%;
-    margin-top: 3.2rem;
+    margin-top: 4.1rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    margin-top: 0.3rem;
+  }
+
+  & > p.text-body {
+    margin-left: 0.4rem;
+    @media screen and (max-width: 800px) {
+      margin-left: 1rem;
+    }
+
+    @media screen and (max-width: 500px) {
+      margin-left: 0;
+    }
   }
 
   &__inputs {
@@ -175,9 +268,21 @@
     align-items: center;
     margin-top: 1.6rem;
     position: relative;
+    border-radius: 2px;
 
     @media screen and (max-width: 1000px) {
       padding: 0 1.3rem;
+    }
+
+    @media screen and (max-width: 640px) {
+      margin-top: 0.6rem;
+      padding: 0 3.8rem;
+    }
+
+    @media screen and (max-width: 500px) {
+      height: 1.35rem;
+      margin-top: 0.9rem;
+      padding: 0 1.7rem;
     }
 
     &-bar {
@@ -191,6 +296,14 @@
       @media screen and (max-width: 1000px) {
         width: calc(100% - 3.2rem);
       }
+
+      @media screen and (max-width: 640px) {
+        width: calc(100% - 7.6rem);
+      }
+
+      @media screen and (max-width: 500px) {
+        width: calc(100% - 3.4rem);
+      }
     }
 
     &-container {
@@ -201,8 +314,24 @@
       align-items: center;
       margin: 0 -1rem;
 
+      @media screen and (max-width: 500px) {
+        margin: -0.5rem;
+      }
+
       & > div:nth-child(1) {
         @media screen and (max-width: 1000px) {
+          display: none;
+        }
+      }
+
+      & > div:nth-child(2) {
+        @media screen and (max-width: 800px) {
+          display: none;
+        }
+      }
+
+      & > div:nth-child(3) {
+        @media screen and (max-width: 640px) {
           display: none;
         }
       }
@@ -227,10 +356,27 @@
       justify-content: center;
       transition: outline 100ms ease-in-out;
       border: 2px solid transparent;
+
+      @media screen and (max-width: 500px) {
+        width: 12px;
+        height: 12px;
+        border: 1px solid transparent;
+        background-image: radial-gradient(
+          circle at 50%,
+          yellow 0px,
+          yellow 2px,
+          transparent 2.5px,
+          transparent 100%
+        );
+      }
     }
 
     input[type='radio']:checked {
       border: 2px solid $color-primary-light;
+
+      @media screen and (max-width: 500px) {
+        border: 1px solid $color-primary-light;
+      }
     }
 
     input[type='radio']::before {
@@ -243,6 +389,12 @@
       border-width: 2px;
       border-style: solid;
       border-color: transparent;
+
+      @media screen and (max-width: 500px) {
+        width: 20px;
+        height: 20px;
+        border-width: 1px;
+      }
     }
 
     input[type='radio']:checked::before {
@@ -269,6 +421,16 @@
       @media screen and (max-width: 1000px) {
         transform: translateX(25%);
       }
+
+      @media screen and (max-width: 640px) {
+        transform: translateX(5%);
+      }
+
+      @media screen and (max-width: 500px) {
+        font-size: 1.4rem;
+        top: calc(100% + 0.7rem);
+        content: url(/img/dollar_small.svg) attr(value);
+      }
     }
   }
 }
@@ -282,6 +444,15 @@
     margin: 4.9rem 0 2.5rem;
     position: relative;
 
+    @media screen and (max-width: 640px) {
+      margin-bottom: 3rem;
+    }
+
+    @media screen and (max-width: 500px) {
+      margin-top: 0;
+      margin-bottom: 2.4rem;
+    }
+
     input[type='number'] {
       width: 26.8rem;
       height: 5.4rem;
@@ -291,6 +462,11 @@
       border-radius: 2px;
       background-color: transparent;
       outline: none;
+
+      @media screen and (max-width: 640px) {
+        width: 18rem;
+        height: 4.1rem;
+      }
 
       &::-webkit-outer-spin-button,
       &::-webkit-inner-spin-button {
@@ -362,5 +538,13 @@
 
   &__btn {
     margin: 3rem 0;
+
+    @media screen and (max-width: 500px) {
+      margin-top: 2.7rem;
+    }
+  }
+
+  & > &__text {
+    letter-spacing: -0.1px;
   }
 }
