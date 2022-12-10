@@ -746,8 +746,9 @@ body {
         bottom: -0.3rem; } }
   .home-main .pets__cards-container {
     position: relative; }
+  .home-main .pets__cards-wrapper {
+    overflow: hidden; }
   .home-main .pets__cards {
-    overflow: hidden;
     position: relative;
     display: grid;
     grid-auto-flow: column;
