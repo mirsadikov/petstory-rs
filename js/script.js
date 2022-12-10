@@ -79,6 +79,7 @@ function arrayShuffle(o) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+  alert('Please give me some time to finish it all, thanks')
   checkSlideProps();
   const { slidesPerView, gap } = slider.config;
   renderNRandomAnimals(slidesPerView, 'beforeend');
