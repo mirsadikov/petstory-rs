@@ -160,6 +160,23 @@
   .nav__logo-menu {
     height: 4.2rem;
     width: auto; }
+  .nav__dimmed {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s; }
+    @media screen and (max-width: 800px) {
+      .nav__dimmed {
+        display: block; } }
+  .nav__menu-state:checked ~ .nav__dimmed {
+    opacity: 1;
+    visibility: visible; }
 
 .button-primary {
   border: none;
