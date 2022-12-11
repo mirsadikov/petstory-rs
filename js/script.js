@@ -1,6 +1,12 @@
 const slider = document.querySelector('.pets__cards');
 const sliderPrev = document.querySelector('.pets__slider-btn--left');
 const sliderNext = document.querySelector('.pets__slider-btn--right');
+const scroller = document.querySelector('#testimonials-slider');
+const testimonials_wrapper = document.querySelector(
+  '.testimonials__cards-wrapper',
+);
+const testimonial_cards = document.querySelector('.testimonials__cards');
+const testimonial_card_list = document.querySelectorAll('.testimonials__card');
 
 const animalsJSON = [
   {
@@ -53,19 +59,32 @@ const animalsJSON = [
   },
   {
     img: '/img/fox.png',
-    title: 'Foxes', 
+    title: 'Foxes',
     desc: 'Native to North America',
     food: '/img/meet-fish_icon.svg',
-  }
+  },
 ];
 
 function checkSlideProps() {
-  if (window.innerWidth < 1000) {
+  if (window.innerWidth < 1000 && window.innerWidth > 500) {
     slider.config = { slidesPerView: 4, gap: 3 };
   } else if (window.innerWidth < 501) {
     slider.config = { slidesPerView: 4, gap: 3 };
   } else {
     slider.config = { slidesPerView: 6, gap: 3 };
+  }
+}
+
+function checkScrollerProps() {
+  if (window.innerWidth <= 1366 && window.innerWidth > 800) {
+    scroller.setAttribute('max', testimonial_card_list.length - 3);
+    scroller.slidesPerView = 3;
+  } else if (window.innerWidth <= 800) {
+    scroller.setAttribute('max', testimonial_card_list.length - 2);
+    scroller.slidesPerView = 2;
+  } else {
+    scroller.setAttribute('max', testimonial_card_list.length - 4);
+    scroller.slidesPerView = 4;
   }
 }
 
@@ -79,7 +98,7 @@ function arrayShuffle(o) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  alert('Please give me some time to finish it all, thanks')
+  // alert('Please give me some time to finish it all, thanks')
   checkSlideProps();
   const { slidesPerView, gap } = slider.config;
   renderNRandomAnimals(slidesPerView, 'beforeend');
@@ -121,6 +140,14 @@ document.addEventListener('DOMContentLoaded', function () {
       slider.style.transform = 'translateX(0)';
       slider.animating = false;
     }, 500);
+  });
+
+  checkScrollerProps();
+
+  scroller.addEventListener('input', function () {
+    testimonial_cards.style.transform = `translateX(calc(-${
+      (this.value * 100) / scroller.slidesPerView
+    }% - ${(this.value * 3) / scroller.slidesPerView}rem))`;
   });
 });
 

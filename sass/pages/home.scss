@@ -823,9 +823,13 @@
     }
   }
 
-  &__cards {
-    display: flex;
+  &__cards-wrapper {
     overflow: hidden;
+  }
+
+  &__cards {
+    transition: transform 0.5s ease;
+    display: flex;
     gap: 3rem;
     align-items: stretch;
     @media screen and (max-width: 640px) {
