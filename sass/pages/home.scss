@@ -119,6 +119,7 @@
     @media screen and (max-width: 500px) {
       bottom: -2rem;
       transform: translateY(100%);
+      z-index: 1;
     }
   }
 

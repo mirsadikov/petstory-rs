@@ -578,7 +578,8 @@ body {
   @media screen and (max-width: 500px) {
     .home-header .hero__button-link {
       bottom: -2rem;
-      transform: translateY(100%); } }
+      transform: translateY(100%);
+      z-index: 1; } }
   .home-header .hero__shape {
     height: 46.5rem;
     width: 46.5rem;
