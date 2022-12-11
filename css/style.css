@@ -1042,7 +1042,7 @@ body {
       margin-top: 4rem; } }
   @media screen and (max-width: 500px) {
     .home-main .feed__button-link {
-      margin: 3.8rem -1rem 2rem -1rem; } }
+      margin: 3.8rem auto 2rem; } }
 
 .home-main .testimonials {
   position: relative;
@@ -1233,6 +1233,38 @@ body {
     @media screen and (max-width: 500px) {
       .home-main .testimonials__button-link {
         margin-top: 3rem; } }
+  .home-main .testimonials__modal {
+    visibility: hidden;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    transition: all 0.2s ease-in-out;
+    display: flex; }
+    .home-main .testimonials__modal-close {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      font-size: 2.5rem;
+      cursor: pointer;
+      z-index: 1000;
+      padding: 0 1rem;
+      user-select: none; }
+    .home-main .testimonials__modal--show {
+      visibility: visible;
+      opacity: 1; }
+    .home-main .testimonials__modal .testimonials__card {
+      position: relative;
+      width: 90vw;
+      max-height: fit-content; }
+      .home-main .testimonials__modal .testimonials__card-bg {
+        max-height: fit-content; }
 
 .donate__h1 {
   display: none; }

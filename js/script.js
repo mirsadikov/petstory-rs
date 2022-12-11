@@ -7,6 +7,10 @@ const testimonials_wrapper = document.querySelector(
 );
 const testimonial_cards = document.querySelector('.testimonials__cards');
 const testimonial_card_list = document.querySelectorAll('.testimonials__card');
+const testimonials_modal = document.querySelector('.testimonials__modal');
+const testimonials_modal_close_layer = document.querySelector(
+  '.testimonials__modal-layer',
+);
 
 const animalsJSON = [
   {
@@ -149,6 +153,32 @@ document.addEventListener('DOMContentLoaded', function () {
       (this.value * 100) / scroller.slidesPerView
     }% - ${(this.value * 3) / scroller.slidesPerView}rem))`;
   });
+
+  if (window.innerWidth <= 640) {
+    testimonial_cards.addEventListener('click', function (e) {
+      const card = e.target.closest('.testimonials__card');
+      if (card) {
+        testimonials_modal.classList.add('testimonials__modal--show');
+        testimonials_modal.innerHTML = '';
+        const cardClone = card.cloneNode(true);
+        cardClone.insertAdjacentHTML(
+          'afterbegin',
+          "<div class='testimonials__modal-close'>X</div>",
+        );
+        testimonials_modal.appendChild(cardClone);
+      }
+      document
+        .querySelector('.testimonials__modal-close')
+        .addEventListener('click', function () {
+          testimonials_modal.classList.remove('testimonials__modal--show');
+        });
+    });
+
+    testimonials_modal.addEventListener('click', function (e) {
+      if (!e.target.closest('.testimonials__card'))
+        testimonials_modal.classList.remove('testimonials__modal--show');
+    });
+  }
 });
 
 function renderNRandomAnimals(n, place) {
